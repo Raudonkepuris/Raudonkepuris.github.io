@@ -1,0 +1,3 @@
+[submodule "portfolio/themes/soho"]
+	path = portfolio/themes/soho
+	url = https://github.com/alexandrevicenzi/soho.git
