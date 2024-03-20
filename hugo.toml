@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'www.liutauras.sk'
 languageCode = 'en-us'
 title = 'Liutauras'
 theme = 'matrix'
