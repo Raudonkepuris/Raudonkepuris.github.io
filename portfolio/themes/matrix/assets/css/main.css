@@ -1,0 +1,114 @@
+body {
+  background-image: url("/matrix.gif");
+  color: #D3D3D3;
+  font-family: sans-serif;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  color: green;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+a {
+  color: #00e;
+  text-decoration: none;
+}
+
+.border{
+  border: 3px gray solid;
+  border-radius: 10px;
+}
+
+.box {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.flex-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.col{
+  background-color: black;
+  padding: 0px 20px;
+  margin: 10px 0;
+}
+
+/* Menu */
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu > li {
+  display: inline;
+  padding: 5px;
+  border: 1.5px gray solid;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.menu > li:hover{
+  border-right: 1.5px black solid;
+  border-top: 1.5px black solid;
+  border-left: 1.5px black solid;
+  border-bottom: 1.5px gray solid;
+}
+
+.menu > li > a{
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: lightgray;
+}
+
+.title{
+  font-size: 25pt;
+  color: lightgray;
+  padding: 0;
+  margin: 10px;
+}
+
+/* Fonts */
+
+.faster-one-regular {
+  font-family: "Faster One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-mono-regular {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-mono-medium {
+  font-family: "Fira Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-mono-bold {
+  font-family: "Fira Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
