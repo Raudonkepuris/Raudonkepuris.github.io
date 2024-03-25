@@ -6,20 +6,19 @@
         Mano populiariausi įrašai:
       </p>
       <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        {{ $section := site.GetPage "blog" }}
+        {{ range where $section.RegularPages ".Params.frontpage" "eq" "true" }}
+        <li><a href="{{.RelPermalink}}">{{ .Title }}</a></li>
+        {{ end }}
       </ul>
 
     <p>
       Mano keli projektai:
     </p>
     <ul>
-      {{ $pages := where .Site.RegularPages "tags" "front-page"}}
-      {{ range $pages }}
-      test
-      <li><a href="">{{ .Title }}</a></li>
+      {{ $section := site.GetPage "projects" }}
+      {{ range where $section.RegularPages ".Params.frontpage" "eq" "true" }}
+      <li><a href="{{.RelPermalink}}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
     </div>
