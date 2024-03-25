@@ -4,13 +4,13 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <div class="box flex-grid">
-    <div class="border col flex-grid">
+  <div class="box flex-grid flex-dir-col align-items-center">
+    <div class="header border col align-items-center justify-content-center">
       <header>
         {{ partial "header.html" . }}
       </header>
     </div>
-    <div class="border col flex-grid">
+    <div class="main border col">
       <main>
         {{ block "main" . }}{{ end }}
       </main>
