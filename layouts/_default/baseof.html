@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="box flex-grid flex-dir-col align-items-center">
+    <div class="header border col align-items-center justify-content-center">
+      <header>
+        {{ partial "header.html" . }}
+      </header>
+    </div>
+    <div class="main border col">
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
+  </div>
+</body>
+</html>

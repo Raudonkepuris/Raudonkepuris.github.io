@@ -1,0 +1,51 @@
+{{ define "main" }}
+  <h2 class="center" style="text-align: center;">Liutauro asmeninė svetainė</h2>
+  <div class="main-content flex-grid flex-wrap justify-content-center">
+    <div class="general">
+      <p>
+        Mano populiariausi įrašai:
+      </p>
+      <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+
+    <p>
+      Mano keli projektai:
+    </p>
+    <ul>
+      {{ $pages := where .Site.RegularPages "tags" "front-page"}}
+      {{ range $pages }}
+      test
+      <li><a href="">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+    </div>
+    <div class="abt-me flex-grid flex-dir-col">
+      <img class="row my-img center" src="/pepe.jpg" alt="">
+
+      <p>
+        Sveiki atvykę į mano svetainę! Aš esu Liutauras, Vilniaus Universiteto studentas
+        studijuojantis elektronikos inžerijos ir telekomunikacijų technologijų studijų programą.
+      </p>
+      <p>
+        Dar 5-oje klasėje mane supažindino su kompiuterio galimybėmis per C++ kalbą, tada
+        prasidėjo mano kelionė į technologijų pasaulį. Per visus šiuos metus išbandžiau daug dalykų:
+        žaidimų kūrimą, svetainių programavimą, žaidimų cheat'ų programavimą ir t.t. Tačiau labiausiai 
+        mane užkabino karantino metu nusipirktas Arduino nano mikrokompiuteris, tada supratau kokią
+        galią turiu savo rankose.
+      </p>
+      <p>
+        Su minėtuoju Arduino nano sužinojau, kad mano kuriamos programos gali veikti ne tik kompiuterio
+        ekrane, bet ir fiziniame pasaulyje. Pradėjau junginėti LED'us, rėlių pagalba valdyti buitinę techniką,
+        traukti iš mikrobangų krosnelių 7-segmentų ekraniukus ir juose vaizduoti informaciją.
+      </p>
+      <p>
+        Šioje svetainėje noriu dokumentuoti įdomybes su kuriomis susiduriu, kurias konstruoju: viską kas 
+        smagu ir čirška.
+      </p>
+    </div>
+  </div>
+{{ end }}

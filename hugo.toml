@@ -1,9 +1,6 @@
 baseURL = 'https://raudonkepuris.github.io/'
 languageCode = 'en-us'
 title = 'Liutauras'
-theme = 'matrix'
-
-
 
 [taxonomies]
   tag = 'tags'

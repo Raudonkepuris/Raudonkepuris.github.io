@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div class="list flex-grid flex-dir-row flex-wrap align-items-center justify-content-center">
+      {{ range .Pages  }}
+      <a href="{{.RelPermalink}}">
+        <div class="item">
+          <h4>{{.Title}}</h4>
+          <img src="{{.RelPermalink}}/header.jpg" alt="" class="center">
+          <p>{{ .Summary }}</p>
+          <p class="date">{{ .Date.Format "2006-01-02"}}</p> 
+        </div>
+      </a>
+      {{ end }}
+  </div>
+</main>
+{{ end }}
